@@ -2,19 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Very Smol Frog Outfits ♡</title>
+
   <meta
     name="description"
-    content="Cute outfit inspiration and shop-the-look finds."
+    content="Cute outfit inspiration, Amazon fashion finds, and shop-the-look outfits."
   >
 
   <style>
+
+    /* ================================
+       BASIC RESET
+    ================================= */
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -24,451 +38,710 @@
       line-height: 1.5;
     }
 
-    /* HEADER */
+    a {
+      color: inherit;
+    }
+
+
+    /* ================================
+       HEADER
+    ================================= */
 
     header {
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.96);
       border-bottom: 1px solid #f1e5e8;
+
       position: sticky;
       top: 0;
       z-index: 100;
+
+      backdrop-filter: blur(8px);
     }
 
     .nav {
       max-width: 1200px;
       margin: auto;
-      padding: 18px 24px;
+
+      padding: 17px 24px;
+
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
 
     .logo {
-      font-family: Georgia, serif;
-      font-size: 22px;
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 21px;
       font-weight: normal;
-      letter-spacing: 1px;
+
+      letter-spacing: 0.5px;
     }
 
-    .logo span {
-      color: #c9899a;
+    .logo-heart {
+      color: #d58b9e;
     }
 
     .nav-link {
-      color: #666;
+      color: #756a6d;
+
       text-decoration: none;
-      font-size: 14px;
+
+      font-size: 13px;
+
+      transition: color 0.2s ease;
     }
 
-    /* HERO */
+    .nav-link:hover {
+      color: #c77f92;
+    }
+
+
+    /* ================================
+       HERO
+    ================================= */
 
     .hero {
       text-align: center;
-      padding: 75px 20px 55px;
+
+      padding: 72px 20px 52px;
+
       background:
         linear-gradient(
           180deg,
-          #fff7f9 0%,
+          #fff5f7 0%,
           #fffafa 100%
         );
     }
 
     .eyebrow {
-      color: #b8788b;
+      color: #bb788b;
+
       text-transform: uppercase;
-      font-size: 11px;
+
+      font-size: 10px;
+
       letter-spacing: 3px;
-      margin-bottom: 14px;
+
+      margin-bottom: 13px;
     }
 
-    h1 {
-      font-family: Georgia, serif;
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+
       font-weight: normal;
-      font-size: clamp(36px, 7vw, 65px);
-      margin-bottom: 15px;
+
+      font-size: clamp(38px, 7vw, 64px);
+
+      line-height: 1.1;
+
+      margin-bottom: 16px;
+    }
+
+    .hero-heart {
+      color: #d58b9e;
     }
 
     .hero p {
-      color: #777;
-      max-width: 500px;
+      color: #817578;
+
+      max-width: 520px;
+
       margin: auto;
-      font-size: 15px;
+
+      font-size: 14px;
+
+      line-height: 1.8;
     }
 
-    /* FILTERS */
+
+    /* ================================
+       SECTION TITLE
+    ================================= */
+
+    .section-heading {
+      text-align: center;
+
+      padding: 40px 20px 5px;
+    }
+
+    .section-heading span {
+      display: block;
+
+      color: #bb788b;
+
+      text-transform: uppercase;
+
+      font-size: 10px;
+
+      letter-spacing: 2.5px;
+
+      margin-bottom: 7px;
+    }
+
+    .section-heading h2 {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 28px;
+
+      font-weight: normal;
+    }
+
+
+    /* ================================
+       FILTERS
+    ================================= */
 
     .filters {
       display: flex;
+
       justify-content: center;
+
       flex-wrap: wrap;
+
       gap: 9px;
-      padding: 30px 20px 10px;
+
+      padding: 24px 20px 12px;
     }
 
     .filter {
-      background: white;
+      background: #ffffff;
+
       border: 1px solid #eadde0;
+
       border-radius: 30px;
-      padding: 9px 17px;
-      font-size: 12px;
+
+      padding: 9px 18px;
+
+      color: #62595b;
+
+      font-size: 11px;
+
       cursor: pointer;
+
+      transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
     }
 
     .filter:hover,
     .filter.active {
       background: #e9c5cf;
+
       border-color: #e9c5cf;
     }
 
-    /* OUTFIT GRID */
+
+    /* ================================
+       OUTFIT GRID
+    ================================= */
 
     .outfits {
       max-width: 1150px;
+
       margin: auto;
-      padding: 30px 22px 80px;
+
+      padding: 28px 22px 75px;
 
       display: grid;
+
       grid-template-columns:
-        repeat(auto-fill, minmax(250px, 1fr));
+        repeat(auto-fill, minmax(270px, 1fr));
+
       gap: 28px;
     }
 
+
+    /* ================================
+       OUTFIT CARD
+    ================================= */
+
     .outfit-card {
-      background: white;
-      border-radius: 18px;
+      background: #ffffff;
+
+      border: 1px solid #f0e5e8;
+
+      border-radius: 20px;
+
       overflow: hidden;
-      border: 1px solid #f0e7e9;
-      transition: transform 0.2s ease,
-                  box-shadow 0.2s ease;
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
     }
 
     .outfit-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 35px rgba(80, 50, 60, 0.08);
+      transform: translateY(-5px);
+
+      box-shadow:
+        0 15px 38px
+        rgba(94, 62, 70, 0.09);
     }
+
+    .outfit-image-link {
+      display: block;
+
+      text-decoration: none;
+    }
+
+
+    /* ================================
+       OUTFIT IMAGE
+
+       Your Pinterest image is 2:3,
+       so this prevents it from being
+       awkwardly cropped.
+    ================================= */
 
     .image-wrap {
       width: 100%;
-      aspect-ratio: 4 / 5;
-      background: #f4eeee;
+
+      aspect-ratio: 2 / 3;
+
+      background: #f7f0ef;
+
       overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .image-wrap img {
       width: 100%;
+
       height: 100%;
+
+      display: block;
+
       object-fit: cover;
+
+      transition: transform 0.35s ease;
     }
 
-    .placeholder {
-      color: #b6a5aa;
-      text-align: center;
-      font-size: 13px;
+    .outfit-card:hover .image-wrap img {
+      transform: scale(1.015);
     }
+
+
+    /* ================================
+       CARD CONTENT
+    ================================= */
 
     .card-info {
-      padding: 18px;
+      padding: 20px;
     }
 
     .category {
       color: #b8788b;
+
       text-transform: uppercase;
-      font-size: 10px;
-      letter-spacing: 1.5px;
-      margin-bottom: 7px;
+
+      font-size: 9px;
+
+      letter-spacing: 1.7px;
+
+      margin-bottom: 8px;
     }
 
-    .card-info h2 {
-      font-family: Georgia, serif;
-      font-size: 20px;
+    .card-info h3 {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 21px;
+
       font-weight: normal;
-      margin-bottom: 6px;
+
+      margin-bottom: 8px;
     }
 
     .card-info p {
-      font-size: 13px;
-      color: #888;
-      margin-bottom: 15px;
+      color: #857a7d;
+
+      font-size: 12px;
+
+      line-height: 1.7;
+
+      margin-bottom: 17px;
     }
+
+
+    /* ================================
+       SHOP BUTTON
+    ================================= */
 
     .shop-button {
       display: block;
+
+      width: 100%;
+
       text-align: center;
+
       text-decoration: none;
+
       background: #e7bcc8;
-      color: #30272a;
-      padding: 11px;
-      border-radius: 9px;
-      font-size: 12px;
+
+      color: #352c2f;
+
+      border-radius: 10px;
+
+      padding: 12px 15px;
+
+      font-size: 11px;
+
       font-weight: bold;
-      letter-spacing: .5px;
-      transition: 0.2s;
+
+      letter-spacing: 0.8px;
+
+      transition:
+        background 0.2s ease,
+        transform 0.2s ease;
     }
 
     .shop-button:hover {
       background: #dcaaba;
+
+      transform: translateY(-1px);
     }
 
-    /* DISCLOSURE */
+
+    /* ================================
+       DISCLOSURE
+    ================================= */
 
     .disclosure {
       max-width: 700px;
+
       margin: 0 auto 60px;
-      padding: 20px 25px;
+
+      padding: 22px 26px;
+
       text-align: center;
-      color: #8b7b80;
+
+      color: #817276;
+
       font-size: 11px;
-      background: #fff5f7;
-      border-radius: 14px;
+
+      line-height: 1.7;
+
+      background: #fff3f6;
+
+      border: 1px solid #f5e2e7;
+
+      border-radius: 15px;
     }
 
-    /* FOOTER */
+    .disclosure strong {
+      color: #5d5154;
+
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 14px;
+
+      font-weight: normal;
+    }
+
+
+    /* ================================
+       FOOTER
+    ================================= */
 
     footer {
       text-align: center;
+
       padding: 35px 20px;
+
       border-top: 1px solid #f0e5e8;
-      color: #999;
-      font-size: 12px;
+
+      color: #a09296;
+
+      font-size: 11px;
     }
 
+
+    /* ================================
+       MOBILE
+    ================================= */
+
     @media (max-width: 600px) {
+
+      .nav {
+        padding: 14px 17px;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
       .hero {
-        padding: 55px 20px 35px;
+        padding: 55px 20px 40px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 13px;
+      }
+
+      .section-heading {
+        padding-top: 32px;
+      }
+
+      .section-heading h2 {
+        font-size: 25px;
+      }
+
+      .filters {
+        padding-top: 20px;
       }
 
       .outfits {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        padding: 25px 12px 60px;
+        grid-template-columns: 1fr;
+
+        padding:
+          22px
+          16px
+          55px;
+
+        gap: 22px;
+      }
+
+      .outfit-card {
+        max-width: 430px;
+
+        width: 100%;
+
+        margin: auto;
       }
 
       .card-info {
-        padding: 13px;
+        padding: 17px;
       }
 
-      .card-info h2 {
-        font-size: 17px;
-      }
-
-      .card-info p {
-        font-size: 11px;
+      .card-info h3 {
+        font-size: 20px;
       }
 
       .shop-button {
-        font-size: 11px;
+        padding: 13px;
       }
+
+      .disclosure {
+        margin:
+          0
+          16px
+          45px;
+      }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
-<header>
-  <div class="nav">
-    <div class="logo">
-      Very Smol Frog <span>♡</span>
-    </div>
 
-    <a class="nav-link" href="#outfits">
-      Outfits
-    </a>
-  </div>
-</header>
+  <!-- ================================
+       HEADER
+  ================================= -->
 
+  <header>
 
-<section class="hero">
+    <div class="nav">
 
-  <div class="eyebrow">
-    outfit inspiration
-  </div>
-
-  <h1>Shop My Looks ♡</h1>
-
-  <p>
-    Cute outfit inspiration, everyday finds,
-    and pieces I'm loving.
-  </p>
-
-</section>
-
-
-<div class="filters">
-
-  <button class="filter active">
-    All
-  </button>
-
-  <button class="filter">
-    Casual
-  </button>
-
-  <button class="filter">
-    Fall
-  </button>
-
-  <button class="filter">
-    Amazon
-  </button>
-
-  <button class="filter">
-    Cozy
-  </button>
-
-</div>
-
-
-<main class="outfits" id="outfits">
-
-
-  <!-- OUTFIT #1 -->
-
-  <article class="outfit-card">
-
-    <div class="image-wrap">
-
-      <!--
-      Later replace this placeholder with:
-
-      <img
-        src="images/outfit1.jpg"
-        alt="Pink casual outfit"
-      >
-      -->
-
-      <div class="placeholder">
-        Outfit photo<br>
-        goes here ♡
+      <div class="logo">
+        Very Smol Frog
+        <span class="logo-heart">♡</span>
       </div>
-
-    </div>
-
-    <div class="card-info">
-
-      <div class="category">
-        Casual
-      </div>
-
-      <h2>
-        Pink Everyday Outfit
-      </h2>
-
-      <p>
-        A cute everyday look with soft pink details.
-      </p>
 
       <a
-        class="shop-button"
-        href="outfits/pink-everyday-outfit/"
+        class="nav-link"
+        href="#outfits"
       >
-        SHOP THE LOOK ♡
+        Shop Outfits
       </a>
 
     </div>
 
-  </article>
+  </header>
 
 
-  <!-- OUTFIT #2 -->
 
-  <article class="outfit-card">
+  <!-- ================================
+       HERO
+  ================================= -->
 
-    <div class="image-wrap">
+  <section class="hero">
 
-      <div class="placeholder">
-        Outfit photo<br>
-        goes here ♡
-      </div>
-
+    <div class="eyebrow">
+      outfit inspiration
     </div>
 
-    <div class="card-info">
+    <h1>
+      Shop My Looks
+      <span class="hero-heart">♡</span>
+    </h1>
 
-      <div class="category">
-        Fall
-      </div>
+    <p>
+      Cute outfit inspiration, everyday fashion
+      finds, and easy shop-the-look links all in
+      one place.
+    </p>
+
+  </section>
+
+
+
+  <!-- ================================
+       OUTFITS
+  ================================= -->
+
+  <section id="outfits">
+
+    <div class="section-heading">
+
+      <span>
+        latest finds
+      </span>
 
       <h2>
-        Cozy Fall Outfit
+        Shop the Looks ♡
       </h2>
 
-      <p>
-        A cozy neutral look for cooler weather.
-      </p>
-
-      <a
-        class="shop-button"
-        href="outfits/cozy-fall-outfit/"
-      >
-        SHOP THE LOOK ♡
-      </a>
-
     </div>
 
-  </article>
 
+    <div class="filters">
 
-  <!-- OUTFIT #3 -->
+      <button class="filter active">
+        All
+      </button>
 
-  <article class="outfit-card">
-
-    <div class="image-wrap">
-
-      <div class="placeholder">
-        Outfit photo<br>
-        goes here ♡
-      </div>
-
-    </div>
-
-    <div class="card-info">
-
-      <div class="category">
+      <button class="filter">
         Amazon
-      </div>
+      </button>
 
-      <h2>
-        Amazon Finds
-      </h2>
+      <button class="filter">
+        Casual
+      </button>
 
-      <p>
-        Affordable pieces for an easy everyday look.
-      </p>
+      <button class="filter">
+        Cozy
+      </button>
 
-      <a
-        class="shop-button"
-        href="outfits/amazon-finds/"
-      >
-        SHOP THE LOOK ♡
-      </a>
+      <button class="filter">
+        Fall
+      </button>
 
     </div>
 
-  </article>
 
 
-</main>
+    <main class="outfits">
 
 
-<div class="disclosure">
+      <!-- ============================
+           OUTFIT #1
+           CUTE & CASUAL AMAZON OUTFIT
+      ============================= -->
 
-  <strong>Affiliate Disclosure ♡</strong><br><br>
-
-  Some links on this site may be affiliate links.
-  I may earn a commission from qualifying purchases
-  at no additional cost to you.
-
-</div>
+      <article class="outfit-card">
 
 
-<footer>
+        <!-- Clicking the picture opens
+             the dedicated outfit page -->
 
-  ♡ Very Smol Frog Outfits ♡
+        <a
+          class="outfit-image-link"
+          href="outfits/cute-casual-amazon-outfit/"
+          aria-label="Shop the Cute and Casual Amazon Outfit"
+        >
 
-</footer>
+          <div class="image-wrap">
+
+            <img
+              src="cute-casual-amazon-outfit.jpg"
+              alt="Cute and casual Amazon outfit with beige quarter zip sweater, light wash wide leg jeans, beige shoulder bag, white sneakers and gold pendant necklace"
+            >
+
+          </div>
+
+        </a>
+
+
+        <div class="card-info">
+
+          <div class="category">
+            Amazon · Casual
+          </div>
+
+
+          <h3>
+            Cute & Casual Outfit ♡
+          </h3>
+
+
+          <p>
+            A soft neutral everyday look featuring
+            a cozy quarter-zip sweater, light wash
+            wide-leg jeans, a beige shoulder bag,
+            white sneakers and a simple gold
+            necklace.
+          </p>
+
+
+          <a
+            class="shop-button"
+            href="outfits/cute-casual-amazon-outfit/"
+          >
+            SHOP THE LOOK ♡
+          </a>
+
+        </div>
+
+
+      </article>
+
+
+    </main>
+
+  </section>
+
+
+
+  <!-- ================================
+       AMAZON AFFILIATE DISCLOSURE
+  ================================= -->
+
+  <div class="disclosure">
+
+    <strong>
+      Affiliate Disclosure ♡
+    </strong>
+
+    <br><br>
+
+    As an Amazon Associate I earn from
+    qualifying purchases.
+
+    <br>
+
+    Some links on this website are affiliate
+    links, which means I may earn a commission
+    when you make a purchase through them at
+    no additional cost to you.
+
+  </div>
+
+
+
+  <!-- ================================
+       FOOTER
+  ================================= -->
+
+  <footer>
+
+    ♡ Very Smol Frog Outfits ♡
+
+  </footer>
 
 
 </body>
