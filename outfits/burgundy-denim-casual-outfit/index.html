@@ -47,7 +47,7 @@
     }
 
     .nav {
-      max-width: 1180px;
+      max-width: 1240px;
       margin: auto;
       padding: 17px 22px;
       display: flex;
@@ -57,9 +57,14 @@
 
     .logo {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 20px;
+      font-size: 21px;
       text-decoration: none;
       color: #30292b;
+      transition: opacity 0.2s ease;
+    }
+
+    .logo:hover {
+      opacity: 0.72;
     }
 
     .heart {
@@ -80,16 +85,16 @@
     /* PAGE */
 
     .page {
-      max-width: 1180px;
+      max-width: 1280px;
       margin: auto;
-      padding: 42px 22px 75px;
+      padding: 38px 28px 75px;
     }
 
     /* INTRO */
 
     .intro {
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 34px;
     }
 
     .eyebrow {
@@ -103,14 +108,14 @@
     h1 {
       font-family: Georgia, "Times New Roman", serif;
       font-weight: normal;
-      font-size: clamp(34px, 5vw, 50px);
+      font-size: clamp(36px, 5vw, 52px);
       line-height: 1.15;
       margin-bottom: 11px;
     }
 
     .intro p {
       color: #81777a;
-      max-width: 580px;
+      max-width: 620px;
       margin: auto;
       font-size: 13px;
       line-height: 1.75;
@@ -120,10 +125,15 @@
 
     .shop-layout {
       display: grid;
-      grid-template-columns: minmax(300px, 440px) minmax(420px, 1fr);
-      gap: 46px;
+
+      grid-template-columns:
+        minmax(390px, 500px)
+        minmax(500px, 1fr);
+
+      gap: 54px;
       align-items: start;
-      max-width: 1050px;
+
+      max-width: 1180px;
       margin: auto;
     }
 
@@ -136,38 +146,38 @@
     .outfit-image-container {
       width: 100%;
       background: #ffffff;
-      padding: 9px;
-      border-radius: 20px;
+      padding: 10px;
+      border-radius: 22px;
       border: 1px solid #f0e5e7;
 
       box-shadow:
-        0 15px 40px
-        rgba(80, 55, 60, 0.06);
+        0 16px 42px
+        rgba(80, 55, 60, 0.065);
     }
 
     .outfit-image {
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 13px;
+      border-radius: 14px;
     }
 
     .image-note {
       text-align: center;
       color: #aa979c;
       font-size: 10px;
-      margin-top: 12px;
+      margin-top: 13px;
     }
 
     /* SHOP SIDE */
 
     .shop-section {
       min-width: 0;
-      padding-top: 8px;
+      padding-top: 9px;
     }
 
     .shop-heading {
-      margin-bottom: 22px;
+      margin-bottom: 23px;
     }
 
     .shop-heading span {
@@ -181,7 +191,7 @@
 
     .shop-heading h2 {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 34px;
+      font-size: 37px;
       font-weight: normal;
       line-height: 1.2;
       margin-bottom: 9px;
@@ -189,42 +199,65 @@
 
     .shop-heading p {
       color: #8b7c80;
-      font-size: 12px;
+      font-size: 13px;
       line-height: 1.7;
-      max-width: 440px;
+      max-width: 480px;
+    }
+
+    .exact-pieces {
+      display: inline-block;
+      margin-top: 10px;
+      color: #b9798a;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 13px;
     }
 
     /* PRODUCT CARDS */
 
     .products {
       display: grid;
-      gap: 11px;
+      gap: 12px;
     }
+
+    /*
+      Entire product row is clickable.
+    */
 
     .product {
       background: #ffffff;
       border: 1px solid #f0e5e7;
-      border-radius: 14px;
-      padding: 15px 16px;
+      border-radius: 15px;
+      padding: 17px 18px;
 
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 18px;
+      gap: 20px;
+
+      color: #30292b;
+      text-decoration: none;
+      cursor: pointer;
 
       transition:
         transform 0.2s ease,
         box-shadow 0.2s ease,
-        border-color 0.2s ease;
+        border-color 0.2s ease,
+        background 0.2s ease;
     }
 
     .product:hover {
       transform: translateY(-2px);
-      border-color: #e8ced5;
+      border-color: #e4c5cd;
+      background: #fffdfd;
 
       box-shadow:
-        0 8px 25px
-        rgba(85, 55, 65, 0.07);
+        0 9px 27px
+        rgba(85, 55, 65, 0.075);
+    }
+
+    .product:focus-visible {
+      outline: 2px solid #d78c9e;
+      outline-offset: 3px;
     }
 
     .product-info {
@@ -236,27 +269,32 @@
       color: #cf8fa0;
       font-size: 8px;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 4px;
+      letter-spacing: 1.6px;
+      margin-bottom: 5px;
     }
 
     .product-name {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 16px;
+      font-size: 17px;
       line-height: 1.35;
     }
 
-    /* SHOP BUTTONS */
+    /* AMAZON CTA */
 
     .amazon-button {
-      display: inline-block;
-      min-width: 125px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-width: 148px;
+
       text-align: center;
-      text-decoration: none;
       background: #e7bcc8;
       color: #332b2d;
-      border-radius: 9px;
-      padding: 11px 13px;
+
+      border-radius: 10px;
+      padding: 12px 14px;
+
       font-size: 9px;
       font-weight: bold;
       letter-spacing: 0.6px;
@@ -268,7 +306,7 @@
         box-shadow 0.2s ease;
     }
 
-    .amazon-button:hover {
+    .product:hover .amazon-button {
       background: #dba9b7;
       transform: translateY(-1px);
 
@@ -280,14 +318,17 @@
     /* DISCLOSURE */
 
     .disclosure {
-      max-width: 760px;
-      margin: 55px auto 0;
-      padding: 20px 25px;
+      max-width: 800px;
+      margin: 58px auto 0;
+      padding: 21px 26px;
+
       background: #fff2f5;
       border: 1px solid #f4e0e5;
       border-radius: 14px;
+
       text-align: center;
       color: #817276;
+
       font-size: 10px;
       line-height: 1.7;
     }
@@ -311,35 +352,38 @@
 
     /* TABLET */
 
-    @media (max-width: 900px) {
+    @media (max-width: 1050px) {
 
       .shop-layout {
-        grid-template-columns: minmax(270px, 360px) 1fr;
-        gap: 28px;
+        grid-template-columns:
+          minmax(310px, 400px)
+          minmax(400px, 1fr);
+
+        gap: 34px;
       }
 
       .shop-heading h2 {
-        font-size: 29px;
+        font-size: 32px;
       }
 
       .product {
-        padding: 13px 14px;
+        padding: 15px;
       }
 
       .product-name {
-        font-size: 15px;
+        font-size: 16px;
       }
 
       .amazon-button {
-        min-width: 110px;
-        padding: 10px 11px;
+        min-width: 132px;
+        padding: 11px 12px;
       }
 
     }
 
     /* MOBILE */
 
-    @media (max-width: 700px) {
+    @media (max-width: 760px) {
 
       .nav {
         padding: 14px 16px;
@@ -354,11 +398,11 @@
       }
 
       .page {
-        padding: 34px 15px 55px;
+        padding: 32px 15px 55px;
       }
 
       .intro {
-        margin-bottom: 25px;
+        margin-bottom: 27px;
       }
 
       h1 {
@@ -369,12 +413,16 @@
         font-size: 12px;
       }
 
-      /* Shop links first on mobile */
+      /*
+        MOBILE:
+        SHOP FIRST
+        IMAGE SECOND
+      */
 
       .shop-layout {
         display: flex;
         flex-direction: column;
-        gap: 34px;
+        gap: 36px;
       }
 
       .shop-section {
@@ -386,64 +434,74 @@
       .outfit-side {
         order: 2;
         width: 100%;
-        max-width: 460px;
+        max-width: 480px;
         margin: auto;
       }
 
       .shop-heading {
         text-align: center;
-        margin-bottom: 19px;
+        margin-bottom: 20px;
       }
 
       .shop-heading h2 {
-        font-size: 29px;
+        font-size: 30px;
       }
 
       .shop-heading p {
         margin: auto;
       }
 
+      .exact-pieces {
+        margin-top: 9px;
+      }
+
       .product {
-        padding: 14px;
+        padding: 15px;
       }
 
       .product-name {
-        font-size: 15px;
+        font-size: 16px;
       }
 
       .amazon-button {
-        min-width: 108px;
+        min-width: 130px;
         padding: 11px 10px;
         font-size: 8px;
       }
 
       .outfit-image-container {
         padding: 7px;
-        border-radius: 16px;
+        border-radius: 17px;
       }
 
       .disclosure {
-        margin-top: 40px;
+        margin-top: 42px;
       }
 
     }
 
     /* SMALL PHONES */
 
-    @media (max-width: 420px) {
+    @media (max-width: 460px) {
 
       h1 {
         font-size: 31px;
       }
 
+      .shop-heading h2 {
+        font-size: 28px;
+      }
+
       .product {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 11px;
+        gap: 12px;
       }
 
       .amazon-button {
         width: 100%;
+        min-width: 0;
+        padding: 12px;
       }
 
     }
@@ -551,6 +609,10 @@
             Tap any piece below to shop the item on Amazon.
           </p>
 
+          <div class="exact-pieces">
+            The exact pieces from this outfit ♡
+          </div>
+
         </div>
 
 
@@ -559,7 +621,13 @@
 
           <!-- MATCHING SET -->
 
-          <div class="product">
+          <a
+            class="product"
+            href="https://www.amazon.com/dp/B0DXBYDK56?tag=verysmolfrog-20"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            aria-label="Shop White Two-Piece Summer Set on Amazon"
+          >
 
             <div class="product-info">
 
@@ -573,21 +641,22 @@
 
             </div>
 
-            <a
-              class="amazon-button"
-              href="https://www.amazon.com/dp/B0DXBYDK56?tag=verysmolfrog-20"
-              target="_blank"
-              rel="nofollow sponsored noopener"
-            >
-              SHOP SET ♡
-            </a>
+            <span class="amazon-button">
+              SHOP ON AMAZON ♡
+            </span>
 
-          </div>
+          </a>
 
 
           <!-- DENIM JACKET -->
 
-          <div class="product">
+          <a
+            class="product"
+            href="https://www.amazon.com/dp/B0G2T5G9YZ?tag=verysmolfrog-20"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            aria-label="Shop Levi's Denim Trucker Jacket on Amazon"
+          >
 
             <div class="product-info">
 
@@ -601,21 +670,22 @@
 
             </div>
 
-            <a
-              class="amazon-button"
-              href="https://www.amazon.com/dp/B0G2T5G9YZ?tag=verysmolfrog-20"
-              target="_blank"
-              rel="nofollow sponsored noopener"
-            >
-              SHOP JACKET ♡
-            </a>
+            <span class="amazon-button">
+              SHOP ON AMAZON ♡
+            </span>
 
-          </div>
+          </a>
 
 
           <!-- SNEAKERS -->
 
-          <div class="product">
+          <a
+            class="product"
+            href="https://www.amazon.com/dp/B0F2F9LQLZ?tag=verysmolfrog-20"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            aria-label="Shop Burgundy adidas Sneakers on Amazon"
+          >
 
             <div class="product-info">
 
@@ -629,16 +699,11 @@
 
             </div>
 
-            <a
-              class="amazon-button"
-              href="https://www.amazon.com/dp/B0F2F9LQLZ?tag=verysmolfrog-20"
-              target="_blank"
-              rel="nofollow sponsored noopener"
-            >
-              SHOP SHOES ♡
-            </a>
+            <span class="amazon-button">
+              SHOP ON AMAZON ♡
+            </span>
 
-          </div>
+          </a>
 
 
         </div>
