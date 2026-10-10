@@ -40,7 +40,7 @@
       font-family: Arial, Helvetica, sans-serif;
       background: #fffafa;
       color: #30292b;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     /* HEADER */
@@ -55,7 +55,7 @@
     }
 
     .nav {
-      max-width: 1240px;
+      max-width: 1100px;
       margin: auto;
       padding: 17px 22px;
       display: flex;
@@ -94,14 +94,13 @@
     /* PAGE */
 
     .page {
-      max-width: 1280px;
+      max-width: 1000px;
       margin: auto;
-      padding: 30px 28px 75px;
+      padding: 34px 24px 70px;
     }
 
     .breadcrumb {
-      max-width: 1180px;
-      margin: 0 auto 25px;
+      margin-bottom: 28px;
       color: #a09296;
       font-size: 11px;
     }
@@ -109,18 +108,44 @@
     .breadcrumb a {
       color: #a09296;
       text-decoration: none;
-      transition: color 0.2s ease;
     }
 
     .breadcrumb a:hover {
       color: #c77f92;
     }
 
+    /* OUTFIT IMAGE */
+
+    .outfit-image-container {
+      max-width: 570px;
+      margin: 0 auto 27px;
+      padding: 9px;
+      background: #ffffff;
+      border: 1px solid #f0e5e7;
+      border-radius: 19px;
+      box-shadow: 0 12px 35px rgba(80, 55, 60, 0.06);
+    }
+
+    .outfit-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .image-note {
+      text-align: center;
+      color: #aa979c;
+      font-size: 10px;
+      margin-top: 12px;
+      margin-bottom: 32px;
+    }
+
     /* INTRO */
 
     .intro {
       text-align: center;
-      margin-bottom: 36px;
+      margin-bottom: 34px;
     }
 
     .eyebrow {
@@ -128,23 +153,23 @@
       text-transform: uppercase;
       letter-spacing: 3px;
       font-size: 9px;
-      margin-bottom: 9px;
+      margin-bottom: 10px;
     }
 
     h1 {
       font-family: Georgia, "Times New Roman", serif;
       font-weight: normal;
-      font-size: clamp(36px, 5vw, 52px);
-      line-height: 1.15;
-      margin-bottom: 13px;
+      font-size: clamp(34px, 5vw, 47px);
+      line-height: 1.2;
+      margin-bottom: 15px;
     }
 
     .intro p {
       color: #81777a;
-      max-width: 620px;
+      max-width: 680px;
       margin: auto;
       font-size: 13px;
-      line-height: 1.8;
+      line-height: 1.9;
     }
 
     /* STYLE TAGS */
@@ -155,7 +180,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 18px;
+      margin-top: 19px;
     }
 
     .tag {
@@ -168,242 +193,153 @@
       letter-spacing: 0.2px;
     }
 
-    /* MAIN LAYOUT */
-
-    .shop-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-      gap: 52px;
-      align-items: start;
-      max-width: 1180px;
-      margin: auto;
-    }
-
-    /* OUTFIT IMAGE */
-
-    .outfit-side {
-      min-width: 0;
-    }
-
-    .outfit-image-container {
-      width: 100%;
-      background: #ffffff;
-      padding: 10px;
-      border-radius: 22px;
-      border: 1px solid #f0e5e7;
-      box-shadow: 0 16px 42px rgba(80, 55, 60, 0.065);
-    }
-
-    .outfit-image {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 14px;
-    }
-
-    .image-note {
-      text-align: center;
-      color: #aa979c;
-      font-size: 10px;
-      margin-top: 13px;
-    }
-
     /* SHOP SECTION */
 
     .shop-section {
-      min-width: 0;
-      padding-top: 8px;
+      max-width: 760px;
+      margin: 0 auto;
     }
 
     .shop-heading {
-      margin-bottom: 23px;
-    }
-
-    .shop-heading > span {
-      display: block;
-      color: #b9798a;
-      text-transform: uppercase;
-      font-size: 9px;
-      letter-spacing: 2.5px;
-      margin-bottom: 7px;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
     .shop-heading h2 {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 37px;
+      font-size: clamp(29px, 4vw, 36px);
       font-weight: normal;
-      line-height: 1.2;
-      margin-bottom: 9px;
+      line-height: 1.25;
+      margin-bottom: 10px;
     }
 
     .shop-heading p {
       color: #8b7c80;
       font-size: 13px;
-      line-height: 1.7;
-      max-width: 480px;
+      line-height: 1.8;
     }
 
-    .exact-pieces {
-      display: inline-block;
-      margin-top: 10px;
-      color: #b9798a;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 13px;
-    }
-
-    /* PRODUCT CARDS */
+    /* INDIVIDUAL PRODUCT SECTIONS */
 
     .products {
       display: grid;
-      gap: 12px;
+      gap: 0;
     }
 
     .product {
-      background: #ffffff;
-      border: 1px solid #f0e5e7;
-      border-radius: 15px;
-      padding: 16px 17px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      color: #30292b;
-      text-decoration: none;
-      cursor: pointer;
-      transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        border-color 0.2s ease,
-        background 0.2s ease;
+      padding: 23px 10px 25px;
+      border-bottom: 1px solid #f0e5e7;
+      text-align: center;
     }
 
-    .product:hover {
-      transform: translateY(-2px);
-      border-color: #e4c5cd;
-      background: #fffdfd;
-      box-shadow: 0 9px 27px rgba(85, 55, 65, 0.075);
+    .product:first-child {
+      border-top: 1px solid #f0e5e7;
     }
 
-    .product:focus-visible {
-      outline: 2px solid #d78c9e;
-      outline-offset: 3px;
-    }
-
-    .product-info {
-      flex: 1;
-      min-width: 0;
-    }
-
-    .product-number {
-      color: #cf8fa0;
-      font-size: 8px;
-      text-transform: uppercase;
-      letter-spacing: 1.6px;
-      margin-bottom: 5px;
-    }
-
-    .product-name {
+    .product h3 {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 16px;
+      font-size: 21px;
+      font-weight: normal;
       line-height: 1.4;
+      margin-bottom: 7px;
     }
 
-    /* AMAZON BUTTON */
+    .product p {
+      color: #81777a;
+      font-size: 12px;
+      line-height: 1.8;
+      max-width: 520px;
+      margin: 0 auto 15px;
+    }
+
+    /* SHOP BUTTONS */
 
     .amazon-button {
       display: inline-flex;
-      align-items: center;
       justify-content: center;
-      min-width: 137px;
-      text-align: center;
+      align-items: center;
+      min-width: 155px;
+      padding: 12px 22px;
       background: #e7bcc8;
       color: #332b2d;
-      border-radius: 10px;
-      padding: 12px 11px;
-      font-size: 8px;
+      border: 1px solid #e7bcc8;
+      border-radius: 9px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 9px;
       font-weight: bold;
-      letter-spacing: 0.5px;
-      white-space: nowrap;
+      letter-spacing: 0.7px;
       transition:
         background 0.2s ease,
+        border-color 0.2s ease,
         transform 0.2s ease,
         box-shadow 0.2s ease;
     }
 
-    .product:hover .amazon-button {
+    .amazon-button:hover {
       background: #dba9b7;
-      transform: translateY(-1px);
+      border-color: #dba9b7;
+      transform: translateY(-2px);
       box-shadow: 0 5px 14px rgba(110, 70, 80, 0.12);
+    }
+
+    .amazon-button:focus-visible {
+      outline: 2px solid #b9798a;
+      outline-offset: 3px;
     }
 
     /* AFFILIATE DISCLOSURE */
 
     .disclosure {
-      max-width: 800px;
-      margin: 58px auto 0;
-      padding: 21px 26px;
+      max-width: 760px;
+      margin: 43px auto 0;
+      padding: 21px 25px;
       background: #fff2f5;
       border: 1px solid #f4e0e5;
       border-radius: 14px;
       text-align: center;
       color: #817276;
       font-size: 10px;
-      line-height: 1.8;
+      line-height: 1.9;
     }
 
     .disclosure strong {
+      display: block;
       font-family: Georgia, "Times New Roman", serif;
       font-weight: normal;
-      font-size: 13px;
+      font-size: 14px;
       color: #5c5053;
+      margin-bottom: 5px;
     }
 
     /* FOOTER */
 
     footer {
       border-top: 1px solid #f0e5e8;
-      padding: 32px 20px;
+      padding: 30px 20px;
       text-align: center;
       color: #a09296;
       font-size: 10px;
     }
 
-    /* TABLET */
-
-    @media (max-width: 1050px) {
-      .shop-layout {
-        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-        gap: 32px;
-      }
-
-      .shop-heading h2 {
-        font-size: 32px;
-      }
-
-      .product {
-        padding: 14px;
-        gap: 10px;
-      }
-
-      .product-name {
-        font-size: 15px;
-      }
-
-      .amazon-button {
-        min-width: 120px;
-        padding: 11px 9px;
-      }
+    footer a {
+      color: #a09296;
+      text-decoration: none;
     }
 
-    /* MOBILE */
+    footer a:hover {
+      color: #c77f92;
+    }
 
-    @media (max-width: 760px) {
+    /* TABLET AND MOBILE */
+
+    @media (max-width: 600px) {
       .nav {
         padding: 14px 16px;
       }
 
       .logo {
-        font-size: 17px;
+        font-size: 18px;
       }
 
       .back-link {
@@ -411,103 +347,55 @@
       }
 
       .page {
-        padding: 24px 15px 55px;
+        padding: 24px 17px 50px;
       }
 
       .breadcrumb {
         margin-bottom: 22px;
       }
 
-      .intro {
-        margin-bottom: 28px;
-      }
-
       h1 {
-        font-size: 35px;
+        font-size: 34px;
       }
 
       .intro p {
         font-size: 12px;
       }
 
-      .shop-layout {
-        display: flex;
-        flex-direction: column;
-        gap: 34px;
+      .outfit-image-container {
+        padding: 7px;
+        border-radius: 15px;
       }
 
-      .outfit-side {
-        order: 1;
-        width: 100%;
-        max-width: 480px;
-        margin: auto;
-      }
-
-      .shop-section {
-        order: 2;
-        width: 100%;
-        padding-top: 0;
-      }
-
-      .shop-heading {
-        text-align: center;
-        margin-bottom: 20px;
+      .image-note {
+        margin-bottom: 27px;
       }
 
       .shop-heading h2 {
         font-size: 30px;
       }
 
-      .shop-heading p {
-        margin: auto;
-      }
-
       .product {
-        padding: 15px;
+        padding: 21px 4px 23px;
       }
 
-      .product-name {
-        font-size: 16px;
+      .product h3 {
+        font-size: 20px;
       }
 
-      .amazon-button {
-        min-width: 120px;
-        padding: 11px 8px;
-        font-size: 8px;
-      }
-
-      .outfit-image-container {
-        padding: 7px;
-        border-radius: 17px;
-      }
-
-      .disclosure {
-        margin-top: 42px;
-        padding: 19px;
-      }
-    }
-
-    /* SMALL PHONES */
-
-    @media (max-width: 460px) {
-      h1 {
-        font-size: 31px;
-      }
-
-      .shop-heading h2 {
-        font-size: 28px;
-      }
-
-      .product {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 12px;
+      .product p {
+        font-size: 12px;
       }
 
       .amazon-button {
         width: 100%;
-        min-width: 0;
-        padding: 12px;
+        max-width: 300px;
+        padding: 13px 18px;
+      }
+
+      .disclosure {
+        padding: 19px 17px;
+        margin-top: 34px;
       }
     }
 
@@ -552,8 +440,6 @@
     </div>
   </header>
 
-  <!-- PAGE -->
-
   <main class="page">
 
     <!-- BREADCRUMB -->
@@ -564,10 +450,25 @@
       <span aria-current="page">Yellow & Brown Fall Outfit</span>
     </nav>
 
+    <!-- OUTFIT IMAGE -->
+
+    <div class="outfit-image-container">
+      <img
+        class="outfit-image"
+        src="../../yellow-brown-fall-outfit.png"
+        alt="Yellow and brown fall outfit featuring an oversized yellow sweatshirt, brown denim jeans, Converse high-top sneakers, a shoulder bag, and accessories"
+        fetchpriority="high"
+      >
+    </div>
+
+    <div class="image-note">
+      ♡ Yellow & brown fall outfit inspiration
+    </div>
+
     <!-- INTRO -->
 
     <section class="intro">
-      <div class="eyebrow">The Outfit Edit · Fall Style</div>
+      <div class="eyebrow">The Outfit Edit</div>
 
       <h1>
         Yellow & Brown Fall Outfit
@@ -578,7 +479,7 @@
         A cozy golden-yellow and chocolate-brown look with
         casual denim, classic sneakers, and sweet little
         accessories. A warm, playful outfit for crisp autumn
-        days. Shop each piece below.
+        days. Shop each piece below!
       </p>
 
       <div class="tags" aria-label="Outfit styles">
@@ -590,190 +491,195 @@
       </div>
     </section>
 
-    <!-- IMAGE + SHOP LINKS -->
+    <!-- SHOP THE LOOK -->
 
-    <div class="shop-layout">
+    <section class="shop-section" aria-labelledby="shop-heading">
 
-      <!-- OUTFIT IMAGE -->
+      <div class="shop-heading">
+        <h2 id="shop-heading">
+          Shop the Look <span class="heart">♡</span>
+        </h2>
 
-      <div class="outfit-side">
-        <div class="outfit-image-container">
-          <img
-            class="outfit-image"
-            src="../../yellow-brown-fall-outfit.png"
-            alt="Yellow and brown fall outfit featuring an oversized yellow sweatshirt, brown denim jeans, Converse high-top sneakers, a shoulder bag, and cute accessories"
-            fetchpriority="high"
-          >
-        </div>
-
-        <div class="image-note">
-          ♡ Yellow & brown fall outfit inspiration
-        </div>
+        <p>
+          Click to shop the pieces from this cozy fall outfit!
+          From the oversized yellow sweatshirt to the little
+          finishing touches, each item helps bring this warm,
+          casual look together.
+        </p>
       </div>
 
-      <!-- SHOP -->
+      <div class="products">
 
-      <section class="shop-section" aria-labelledby="shop-heading">
+        <!-- SWEATSHIRT -->
 
-        <div class="shop-heading">
-          <span>Amazon Finds</span>
-
-          <h2 id="shop-heading">
-            Shop the Look <span class="heart">♡</span>
-          </h2>
+        <section class="product">
+          <h3>Oversized Yellow Sweatshirt</h3>
 
           <p>
-            From cozy layers to little finishing touches,
-            find each piece from this golden fall outfit.
-            Tap an item to shop it on Amazon.
+            The cozy golden-yellow statement piece that makes
+            this outfit feel warm, relaxed, and perfect for fall.
           </p>
 
-          <div class="exact-pieces">
-            The pieces from this outfit ♡
-          </div>
-        </div>
-
-        <div class="products">
-
-          <!-- SWEATSHIRT -->
-
           <a
-            class="product"
+            class="amazon-button"
             href="https://www.amazon.com/dp/B0H3ZZ85QM?tag=verysmolfrog-20"
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop Oversized Yellow Sweatshirt on Amazon"
           >
-            <div class="product-info">
-              <div class="product-number">Piece 01</div>
-              <div class="product-name">Oversized Yellow Sweatshirt</div>
-            </div>
-
-            <span class="amazon-button">SHOP ON AMAZON ♡</span>
+            SHOP SWEATSHIRT ↗
           </a>
+        </section>
 
-          <!-- JEANS -->
+        <!-- JEANS -->
+
+        <section class="product">
+          <h3>Brown Denim Jeans</h3>
+
+          <p>
+            Chocolate-brown denim adds a rich autumn color and
+            balances the bright sweatshirt for an easy everyday look.
+          </p>
 
           <a
-            class="product"
+            class="amazon-button"
             href="https://www.amazon.com/dp/B0HCTBKTWP?tag=verysmolfrog-20"
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop Brown Denim Jeans on Amazon"
           >
-            <div class="product-info">
-              <div class="product-number">Piece 02</div>
-              <div class="product-name">Brown Denim Jeans</div>
-            </div>
-
-            <span class="amazon-button">SHOP ON AMAZON ♡</span>
+            SHOP JEANS ↗
           </a>
+        </section>
 
-          <!-- BAG -->
+        <!-- BAG -->
+
+        <section class="product">
+          <h3>JW PEI Shoulder Bag</h3>
+
+          <p>
+            A cute finishing accessory that complements the
+            brown tones and keeps the outfit looking put together.
+          </p>
 
           <a
-            class="product"
+            class="amazon-button"
             href="https://www.amazon.com/dp/B08N6R37TN?tag=verysmolfrog-20"
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop JW PEI Shoulder Bag on Amazon"
           >
-            <div class="product-info">
-              <div class="product-number">Piece 03</div>
-              <div class="product-name">JW PEI Shoulder Bag</div>
-            </div>
-
-            <span class="amazon-button">SHOP ON AMAZON ♡</span>
+            SHOP BAG ↗
           </a>
+        </section>
 
-          <!-- SNEAKERS -->
+        <!-- SNEAKERS -->
+
+        <section class="product">
+          <h3>Converse High-Top Sneakers</h3>
+
+          <p>
+            Classic high-tops give the outfit a casual, laid-back
+            finish that's easy to wear for everyday plans.
+          </p>
 
           <a
-            class="product"
+            class="amazon-button"
             href="https://www.amazon.com/dp/B07YCB24S7?tag=verysmolfrog-20"
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop Converse High-Top Sneakers on Amazon"
           >
-            <div class="product-info">
-              <div class="product-number">Piece 04</div>
-              <div class="product-name">Converse High-Top Sneakers</div>
-            </div>
-
-            <span class="amazon-button">SHOP ON AMAZON ♡</span>
+            SHOP SNEAKERS ↗
           </a>
+        </section>
 
-          <!-- HAIR CLIP -->
+        <!-- HAIR CLIP -->
+
+        <section class="product">
+          <h3>French Hair Claw Clip</h3>
+
+          <p>
+            An easy hair accessory for a relaxed updo that suits
+            the cozy, effortless feel of the outfit.
+          </p>
 
           <a
-            class="product"
+            class="amazon-button"
             href="https://www.amazon.com/dp/B00HDOYQNS?tag=verysmolfrog-20"
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop French Hair Claw Clip on Amazon"
           >
-            <div class="product-info">
-              <div class="product-number">Piece 05</div>
-              <div class="product-name">French Hair Claw Clip</div>
-            </div>
-
-            <span class="amazon-button">SHOP ON AMAZON ♡</span>
+            SHOP HAIR CLIP ↗
           </a>
+        </section>
 
-          <!-- EARRINGS -->
+        <!-- EARRINGS -->
+
+        <section class="product">
+          <h3>Small Gold Hoop Earrings</h3>
+
+          <p>
+            Simple gold hoops add a little warmth and shine
+            without taking attention away from the outfit.
+          </p>
 
           <a
-            class="product"
+            class="amazon-button"
             href="https://www.amazon.com/dp/B08KD2CNFW?tag=verysmolfrog-20"
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop Small Gold Hoop Earrings on Amazon"
           >
-            <div class="product-info">
-              <div class="product-number">Piece 06</div>
-              <div class="product-name">Small Gold Hoop Earrings</div>
-            </div>
-
-            <span class="amazon-button">SHOP ON AMAZON ♡</span>
+            SHOP EARRINGS ↗
           </a>
+        </section>
 
-          <!-- BRACELETS -->
+        <!-- BRACELETS -->
+
+        <section class="product">
+          <h3>Dainty Bracelet Set</h3>
+
+          <p>
+            Delicate bracelets are a subtle finishing touch
+            that make this simple casual outfit feel extra cute.
+          </p>
 
           <a
-            class="product"
+            class="amazon-button"
             href="https://www.amazon.com/dp/B0GHH6QPZB?tag=verysmolfrog-20"
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop Dainty Bracelet Set on Amazon"
           >
-            <div class="product-info">
-              <div class="product-number">Piece 07</div>
-              <div class="product-name">Dainty Bracelet Set</div>
-            </div>
-
-            <span class="amazon-button">SHOP ON AMAZON ♡</span>
+            SHOP BRACELETS ↗
           </a>
+        </section>
 
-          <!-- HAIR BOWS -->
+        <!-- HAIR BOWS -->
+
+        <section class="product">
+          <h3>Small Satin Hair Bows</h3>
+
+          <p>
+            Sweet satin bows add a playful, feminine detail
+            that pairs perfectly with the warm fall colors.
+          </p>
 
           <a
-            class="product"
+            class="amazon-button"
             href="https://www.amazon.com/dp/B0FT3WN15R?tag=verysmolfrog-20"
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop Small Satin Hair Bows on Amazon"
           >
-            <div class="product-info">
-              <div class="product-number">Piece 08</div>
-              <div class="product-name">Small Satin Hair Bows</div>
-            </div>
-
-            <span class="amazon-button">SHOP ON AMAZON ♡</span>
+            SHOP HAIR BOWS ↗
           </a>
+        </section>
 
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- AFFILIATE DISCLOSURE -->
 
@@ -784,7 +690,8 @@
         As an Amazon Associate I earn from qualifying purchases.
         This page contains affiliate links, which means I may earn
         a commission if you purchase through these links, at no
-        additional cost to you.
+        additional cost to you. Thank you for supporting
+        VerySmolFrog!
       </p>
     </aside>
 
@@ -793,7 +700,9 @@
   <!-- FOOTER -->
 
   <footer>
-    ♡ VerySmolFrog Outfits ♡
+    <a href="/VerySmolFrogOutfits/">
+      ♡ VerySmolFrog Outfits ♡
+    </a>
   </footer>
 
 </body>
