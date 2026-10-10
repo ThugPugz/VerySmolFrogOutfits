@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -209,7 +210,6 @@
       border: 1px solid #f0e5e8;
       border-radius: 20px;
       overflow: hidden;
-
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -326,7 +326,6 @@
       font-weight: bold;
       letter-spacing: 0.8px;
       margin-top: auto;
-
       transition:
         background 0.2s ease,
         transform 0.2s ease,
@@ -575,7 +574,70 @@
 
     <main class="outfits">
 
-      
+
+      <!-- NEW OUTFIT: CHOCOLATE POLKADOT -->
+
+      <article
+        class="outfit-card"
+        data-categories="amazon casual cozy"
+      >
+
+        <a
+          class="outfit-image-link"
+          href="outfits/chocolate-polkadot-outfit/"
+          aria-label="Shop the Chocolate Polkadot Outfit"
+        >
+
+          <div class="image-wrap">
+
+            <img
+              src="chocolate-polkadot-outfit.png"
+              alt="Chocolate brown polkadot outfit with a tank top, yoga pants, cardigan and brown Mary Jane style shoes"
+              loading="lazy"
+            >
+
+          </div>
+
+        </a>
+
+        <div class="card-info">
+
+          <div class="card-topline">
+
+            <div class="category">
+              Amazon · Casual · Cozy
+            </div>
+
+            <div class="new-badge">
+              NEW ♡
+            </div>
+
+          </div>
+
+          <h3>
+            Chocolate Polkadot Outfit ♡
+          </h3>
+
+          <p>
+            A cute, cozy look featuring chocolate-brown
+            tones, playful polkadots, comfy yoga pants
+            and a cardigan. The original shoes are out
+            of stock, so I've linked a similar-style
+            brown Mary Jane replacement!
+          </p>
+
+          <a
+            class="shop-button"
+            href="outfits/chocolate-polkadot-outfit/"
+          >
+            SHOP THE LOOK ♡
+          </a>
+
+        </div>
+
+      </article>
+
+
       <!-- NEW OUTFIT: YELLOW & BROWN FALL -->
 
       <article
@@ -588,17 +650,23 @@
           href="outfits/yellow-brown-fall-outfit/"
           aria-label="Shop the Yellow and Brown Fall Outfit"
         >
+
           <div class="image-wrap">
+
             <img
               src="yellow-brown-fall-outfit.png"
-              alt="Cute fall outfit with a yellow oversized sweatshirt, brown denim jeans, white Converse sneakers, a pale yellow bag and gold accessories"
+              alt="Cozy yellow and chocolate brown fall outfit"
+              loading="lazy"
             >
+
           </div>
+
         </a>
 
         <div class="card-info">
 
           <div class="card-topline">
+
             <div class="category">
               Amazon · Casual · Cozy
             </div>
@@ -606,17 +674,17 @@
             <div class="new-badge">
               NEW ♡
             </div>
+
           </div>
 
           <h3>
-            Yellow & Brown Fall Outfit ♡
+            Yellow & Brown Fall Outfit 💛🧸
           </h3>
 
           <p>
-            A cozy fall look featuring an oversized
-            yellow sweatshirt, chocolate-brown denim,
-            white high-top sneakers, a light yellow
-            shoulder bag and cute gold accessories.
+            A cute, cozy fall look pairing buttery
+            yellow with rich chocolate-brown tones.
+            Easy to recreate for a casual autumn outfit!
           </p>
 
           <a
@@ -652,6 +720,7 @@
             <img
               src="striped-sweater-dark-denim-outfit.png"
               alt="Cute casual outfit with striped knit sweater, dark wash wide leg jeans, white sneakers and brown shoulder bag"
+              loading="lazy"
             >
 
           </div>
@@ -717,6 +786,7 @@
             <img
               src="burgundy-denim-casual-outfit.jpg"
               alt="Casual outfit featuring a denim jacket, white matching set and burgundy adidas sneakers"
+              loading="lazy"
             >
 
           </div>
@@ -777,12 +847,12 @@
             <img
               src="cute-casual-amazon-outfit.jpg"
               alt="Cute and casual Amazon outfit with beige quarter zip sweater, light wash wide leg jeans, beige shoulder bag, white sneakers and gold pendant necklace"
+              loading="lazy"
             >
 
           </div>
 
         </a>
-
 
         <div class="card-info">
 
@@ -870,7 +940,6 @@
     const outfitCards =
       document.querySelectorAll(".outfit-card");
 
-
     filterButtons.forEach((button) => {
 
       button.addEventListener("click", () => {
@@ -895,7 +964,6 @@
           const categories =
             card.dataset.categories
               .split(" ");
-
 
           const shouldShow =
             selectedFilter === "all" ||
