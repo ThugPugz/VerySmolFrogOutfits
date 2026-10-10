@@ -1,23 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffafa">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>Burgundy & Denim Casual Outfit | VerySmolFrog</title>
+  <title>Burgundy & Denim Casual Outfit ♡ | VerySmolFrog</title>
 
   <meta
     name="description"
     content="Shop this burgundy and denim casual outfit featuring a white two-piece set, Levi's denim trucker jacket and burgundy adidas sneakers."
   >
 
-  <style>
+  <meta name="robots" content="index, follow">
 
+  <link
+    rel="canonical"
+    href="https://thugpugz.github.io/VerySmolFrogOutfits/outfits/burgundy-denim-casual-outfit/"
+  >
+
+  <style>
     * {
       box-sizing: border-box;
       margin: 0;
@@ -31,51 +35,48 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #fffafa;
-      color: #30292b;
-      line-height: 1.5;
+      color: #292525;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
     }
 
     /* HEADER */
 
     header {
       background: rgba(255, 255, 255, 0.96);
-      border-bottom: 1px solid #f1e4e7;
+      border-bottom: 1px solid #f1e5e8;
       position: sticky;
       top: 0;
-      z-index: 100;
-      backdrop-filter: blur(8px);
+      z-index: 10;
     }
 
     .nav {
-      max-width: 1240px;
+      max-width: 1100px;
       margin: auto;
-      padding: 17px 22px;
+      padding: 17px 24px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      gap: 15px;
     }
 
     .logo {
       font-family: Georgia, "Times New Roman", serif;
       font-size: 21px;
       text-decoration: none;
-      color: #30292b;
-      transition: opacity 0.2s ease;
     }
 
-    .logo:hover {
-      opacity: 0.72;
-    }
-
-    .heart {
-      color: #d78c9e;
+    .logo-heart {
+      color: #d58b9e;
     }
 
     .back-link {
-      text-decoration: none;
-      color: #817477;
+      color: #756a6d;
       font-size: 12px;
-      transition: color 0.2s ease;
+      text-decoration: none;
     }
 
     .back-link:hover {
@@ -85,178 +86,148 @@
     /* PAGE */
 
     .page {
-      max-width: 1280px;
+      max-width: 1000px;
       margin: auto;
-      padding: 38px 28px 75px;
+      padding: 38px 24px 65px;
     }
 
-    /* INTRO */
+    .breadcrumb {
+      color: #9b858b;
+      font-size: 11px;
+      margin-bottom: 25px;
+    }
 
-    .intro {
+    .breadcrumb a {
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      color: #c77f92;
+    }
+
+    /* OUTFIT LAYOUT */
+
+    .outfit-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+      gap: 42px;
+      align-items: start;
+    }
+
+    .main-image {
+      background: #f7f0ef;
+      border: 1px solid #f0e5e8;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .main-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .image-caption {
       text-align: center;
-      margin-bottom: 34px;
+      color: #a2838b;
+      font-size: 11px;
+      padding: 12px;
     }
+
+    /* OUTFIT DETAILS */
 
     .eyebrow {
-      color: #b9798a;
+      color: #bb788b;
       text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 9px;
-      margin-bottom: 9px;
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      margin-bottom: 10px;
     }
 
     h1 {
       font-family: Georgia, "Times New Roman", serif;
-      font-weight: normal;
-      font-size: clamp(36px, 5vw, 52px);
-      line-height: 1.15;
-      margin-bottom: 11px;
-    }
-
-    .intro p {
-      color: #81777a;
-      max-width: 620px;
-      margin: auto;
-      font-size: 13px;
-      line-height: 1.75;
-    }
-
-    /* MAIN SHOP LAYOUT */
-
-    .shop-layout {
-      display: grid;
-
-      grid-template-columns:
-        minmax(390px, 500px)
-        minmax(500px, 1fr);
-
-      gap: 54px;
-      align-items: start;
-
-      max-width: 1180px;
-      margin: auto;
-    }
-
-    /* OUTFIT IMAGE */
-
-    .outfit-side {
-      min-width: 0;
-    }
-
-    .outfit-image-container {
-      width: 100%;
-      background: #ffffff;
-      padding: 10px;
-      border-radius: 22px;
-      border: 1px solid #f0e5e7;
-
-      box-shadow:
-        0 16px 42px
-        rgba(80, 55, 60, 0.065);
-    }
-
-    .outfit-image {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 14px;
-    }
-
-    .image-note {
-      text-align: center;
-      color: #aa979c;
-      font-size: 10px;
-      margin-top: 13px;
-    }
-
-    /* SHOP SIDE */
-
-    .shop-section {
-      min-width: 0;
-      padding-top: 9px;
-    }
-
-    .shop-heading {
-      margin-bottom: 23px;
-    }
-
-    .shop-heading span {
-      display: block;
-      color: #b9798a;
-      text-transform: uppercase;
-      font-size: 9px;
-      letter-spacing: 2.5px;
-      margin-bottom: 7px;
-    }
-
-    .shop-heading h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 37px;
+      font-size: clamp(32px, 4.5vw, 43px);
       font-weight: normal;
       line-height: 1.2;
-      margin-bottom: 9px;
+      margin-bottom: 15px;
     }
 
-    .shop-heading p {
-      color: #8b7c80;
+    .heart {
+      color: #d58b9e;
+    }
+
+    .intro {
+      color: #817578;
       font-size: 13px;
-      line-height: 1.7;
-      max-width: 480px;
+      line-height: 1.9;
+      margin-bottom: 18px;
     }
 
-    .exact-pieces {
+    /* STYLE TAGS */
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 28px;
+    }
+
+    .tag {
       display: inline-block;
-      margin-top: 10px;
-      color: #b9798a;
+      padding: 6px 11px;
+      background: #fff1f4;
+      border: 1px solid #f2dfe5;
+      border-radius: 20px;
+      color: #96727d;
+      font-size: 10px;
+    }
+
+    /* PRODUCT LIST */
+
+    .products h2 {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 13px;
+      font-size: 25px;
+      font-weight: normal;
+      margin-bottom: 5px;
     }
 
-    /* PRODUCT CARDS */
-
-    .products {
-      display: grid;
-      gap: 12px;
+    .products-intro {
+      color: #857a7d;
+      font-size: 12px;
+      margin-bottom: 18px;
     }
 
-    /*
-      Entire product row is clickable.
-    */
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
 
     .product {
       background: #ffffff;
-      border: 1px solid #f0e5e7;
-      border-radius: 15px;
-      padding: 17px 18px;
-
+      border: 1px solid #f0e5e8;
+      border-radius: 13px;
+      padding: 14px 15px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
-
-      color: #30292b;
+      gap: 14px;
+      color: #292525;
       text-decoration: none;
-      cursor: pointer;
-
       transition:
         transform 0.2s ease,
         box-shadow 0.2s ease,
-        border-color 0.2s ease,
-        background 0.2s ease;
+        border-color 0.2s ease;
     }
 
     .product:hover {
       transform: translateY(-2px);
       border-color: #e4c5cd;
-      background: #fffdfd;
-
-      box-shadow:
-        0 9px 27px
-        rgba(85, 55, 65, 0.075);
+      box-shadow: 0 8px 22px rgba(85, 55, 65, 0.07);
     }
 
     .product:focus-visible {
-      outline: 2px solid #d78c9e;
+      outline: 2px solid #d58b9e;
       outline-offset: 3px;
     }
 
@@ -267,476 +238,309 @@
 
     .product-number {
       color: #cf8fa0;
-      font-size: 8px;
+      font-size: 9px;
       text-transform: uppercase;
-      letter-spacing: 1.6px;
-      margin-bottom: 5px;
+      letter-spacing: 1.5px;
+      margin-bottom: 4px;
     }
 
     .product-name {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      line-height: 1.35;
+      font-size: 16px;
+      line-height: 1.4;
     }
 
-    /* AMAZON CTA */
-
     .amazon-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      min-width: 148px;
-
-      text-align: center;
+      display: inline-block;
+      flex-shrink: 0;
       background: #e7bcc8;
-      color: #332b2d;
-
-      border-radius: 10px;
-      padding: 12px 14px;
-
+      color: #352c2f;
+      padding: 10px 12px;
+      border-radius: 8px;
+      text-decoration: none;
       font-size: 9px;
       font-weight: bold;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.4px;
+      text-align: center;
       white-space: nowrap;
-
-      transition:
-        background 0.2s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+      transition: background 0.2s ease;
     }
 
     .product:hover .amazon-button {
-      background: #dba9b7;
-      transform: translateY(-1px);
-
-      box-shadow:
-        0 5px 14px
-        rgba(110, 70, 80, 0.12);
+      background: #dcaaba;
     }
 
-    /* DISCLOSURE */
+    /* AFFILIATE DISCLOSURE */
 
     .disclosure {
-      max-width: 800px;
-      margin: 58px auto 0;
-      padding: 21px 26px;
-
-      background: #fff2f5;
-      border: 1px solid #f4e0e5;
-      border-radius: 14px;
-
+      margin-top: 35px;
+      padding: 22px;
       text-align: center;
       color: #817276;
-
-      font-size: 10px;
-      line-height: 1.7;
+      font-size: 11px;
+      line-height: 1.8;
+      background: #fff3f6;
+      border: 1px solid #f5e2e7;
+      border-radius: 15px;
     }
 
     .disclosure strong {
+      color: #5d5154;
       font-family: Georgia, "Times New Roman", serif;
+      font-size: 14px;
       font-weight: normal;
-      font-size: 13px;
-      color: #5c5053;
     }
 
     /* FOOTER */
 
     footer {
-      border-top: 1px solid #f0e5e8;
-      padding: 32px 20px;
       text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #f0e5e8;
       color: #a09296;
-      font-size: 10px;
-    }
-
-    /* TABLET */
-
-    @media (max-width: 1050px) {
-
-      .shop-layout {
-        grid-template-columns:
-          minmax(310px, 400px)
-          minmax(400px, 1fr);
-
-        gap: 34px;
-      }
-
-      .shop-heading h2 {
-        font-size: 32px;
-      }
-
-      .product {
-        padding: 15px;
-      }
-
-      .product-name {
-        font-size: 16px;
-      }
-
-      .amazon-button {
-        min-width: 132px;
-        padding: 11px 12px;
-      }
-
+      font-size: 11px;
     }
 
     /* MOBILE */
 
-    @media (max-width: 760px) {
-
+    @media (max-width: 700px) {
       .nav {
-        padding: 14px 16px;
+        padding: 15px 17px;
       }
 
       .logo {
-        font-size: 17px;
-      }
-
-      .back-link {
-        font-size: 11px;
+        font-size: 18px;
       }
 
       .page {
-        padding: 32px 15px 55px;
+        padding: 25px 16px 45px;
       }
 
-      .intro {
-        margin-bottom: 27px;
+      .breadcrumb {
+        margin-bottom: 20px;
+      }
+
+      .outfit-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .main-image {
+        max-width: 500px;
+        margin: auto;
+        width: 100%;
       }
 
       h1 {
         font-size: 35px;
       }
 
-      .intro p {
-        font-size: 12px;
-      }
-
-      /*
-        MOBILE:
-        SHOP FIRST
-        IMAGE SECOND
-      */
-
-      .shop-layout {
-        display: flex;
-        flex-direction: column;
-        gap: 36px;
-      }
-
-      .shop-section {
-        order: 1;
-        width: 100%;
-        padding-top: 0;
-      }
-
-      .outfit-side {
-        order: 2;
-        width: 100%;
-        max-width: 480px;
-        margin: auto;
-      }
-
-      .shop-heading {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      .shop-heading h2 {
-        font-size: 30px;
-      }
-
-      .shop-heading p {
-        margin: auto;
-      }
-
-      .exact-pieces {
-        margin-top: 9px;
+      .products h2 {
+        font-size: 24px;
       }
 
       .product {
-        padding: 15px;
+        padding: 13px;
+        gap: 10px;
       }
 
       .product-name {
-        font-size: 16px;
+        font-size: 15px;
       }
 
       .amazon-button {
-        min-width: 130px;
-        padding: 11px 10px;
+        padding: 10px;
         font-size: 8px;
       }
-
-      .outfit-image-container {
-        padding: 7px;
-        border-radius: 17px;
-      }
-
-      .disclosure {
-        margin-top: 42px;
-      }
-
     }
 
-    /* SMALL PHONES */
-
-    @media (max-width: 460px) {
-
-      h1 {
-        font-size: 31px;
-      }
-
-      .shop-heading h2 {
-        font-size: 28px;
-      }
-
+    @media (max-width: 420px) {
       .product {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 12px;
+        align-items: flex-start;
       }
 
       .amazon-button {
-        width: 100%;
-        min-width: 0;
-        padding: 12px;
+        white-space: normal;
+        max-width: 100px;
       }
-
     }
 
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
-
 
 <body>
 
   <!-- HEADER -->
 
   <header>
-
     <div class="nav">
-
-      <a
-        class="logo"
-        href="/VerySmolFrogOutfits/"
-      >
+      <a class="logo" href="/VerySmolFrogOutfits/">
         VerySmolFrog
-        <span class="heart">♡</span>
+        <span class="logo-heart">♡</span>
       </a>
 
-      <a
-        class="back-link"
-        href="/VerySmolFrogOutfits/"
-      >
+      <a class="back-link" href="/VerySmolFrogOutfits/#outfits">
         ← All Outfits
       </a>
-
     </div>
-
   </header>
 
-
-  <!-- PAGE -->
+  <!-- MAIN CONTENT -->
 
   <main class="page">
 
+    <div class="breadcrumb">
+      <a href="/VerySmolFrogOutfits/">Home</a>
+      &nbsp; / &nbsp;
+      Burgundy & Denim Casual Outfit ♡
+    </div>
 
-    <!-- INTRO -->
-
-    <section class="intro">
-
-      <div class="eyebrow">
-        amazon fashion
-      </div>
-
-      <h1>
-        Burgundy & Denim Casual Outfit
-        <span class="heart">♡</span>
-      </h1>
-
-      <p>
-        An easy casual outfit with a soft white matching set,
-        classic denim jacket and burgundy sneakers.
-        Shop every piece from the look below.
-      </p>
-
-    </section>
-
-
-    <!-- IMAGE + SHOP LINKS -->
-
-    <div class="shop-layout">
-
+    <div class="outfit-layout">
 
       <!-- OUTFIT IMAGE -->
 
-      <div class="outfit-side">
-
-        <div class="outfit-image-container">
-
+      <section>
+        <div class="main-image">
           <img
-            class="outfit-image"
-            src="/VerySmolFrogOutfits/burgundy-denim-casual-outfit.jpg"
-            alt="Casual outfit featuring a denim jacket, white matching set and burgundy adidas sneakers"
+            src="../../burgundy-denim-casual-outfit.jpg"
+            alt="Casual outfit featuring a white two-piece set, Levi's denim trucker jacket, and burgundy adidas sneakers"
+            fetchpriority="high"
           >
-
         </div>
 
-        <div class="image-note">
-          ♡ Burgundy & denim casual outfit inspiration
+        <p class="image-caption">
+          Burgundy & denim casual outfit inspiration ♡
+        </p>
+      </section>
+
+      <!-- OUTFIT DETAILS -->
+
+      <section class="outfit-details">
+
+        <div class="eyebrow">
+          The Outfit Edit
         </div>
 
-      </div>
+        <h1>
+          Burgundy & Denim Casual Outfit
+          <span class="heart">♡</span>
+        </h1>
 
+        <p class="intro">
+          An easy casual outfit with a soft white matching
+          set, classic denim jacket and burgundy sneakers.
+          A relaxed everyday look with a little pop of color.
+          Shop the pieces below ♡
+        </p>
 
-      <!-- SHOP -->
-
-      <section class="shop-section">
-
-        <div class="shop-heading">
-
-          <span>
-            amazon finds
-          </span>
-
-          <h2>
-            Shop the Look
-          </h2>
-
-          <p>
-            Tap any piece below to shop the item on Amazon.
-          </p>
-
-          <div class="exact-pieces">
-            The exact pieces from this outfit ♡
-          </div>
-
+        <div class="tags">
+          <span class="tag">Casual</span>
+          <span class="tag">Denim</span>
+          <span class="tag">Burgundy</span>
+          <span class="tag">Everyday Style</span>
+          <span class="tag">Amazon Finds</span>
         </div>
 
+        <!-- SHOP THE LOOK -->
 
         <div class="products">
 
+          <h2>Shop the Look ♡</h2>
 
-          <!-- MATCHING SET -->
+          <p class="products-intro">
+            Shop the pieces featured in this outfit.
+          </p>
 
-          <a
-            class="product"
-            href="https://www.amazon.com/dp/B0DXBYDK56?tag=verysmolfrog-20"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            aria-label="Shop White Two-Piece Summer Set on Amazon"
-          >
+          <div class="product-list">
 
-            <div class="product-info">
+            <!-- MATCHING SET -->
 
-              <div class="product-number">
-                Piece 01
+            <a
+              class="product"
+              href="https://www.amazon.com/dp/B0DXBYDK56?tag=verysmolfrog-20"
+              target="_blank"
+              rel="sponsored nofollow noopener noreferrer"
+              aria-label="Shop White Two-Piece Summer Set on Amazon"
+            >
+              <div class="product-info">
+                <div class="product-number">Piece 01</div>
+                <div class="product-name">
+                  White Two-Piece Summer Set
+                </div>
               </div>
 
-              <div class="product-name">
-                White Two-Piece Summer Set
+              <span class="amazon-button">SHOP ♡</span>
+            </a>
+
+            <!-- DENIM JACKET -->
+
+            <a
+              class="product"
+              href="https://www.amazon.com/dp/B0G2T5G9YZ?tag=verysmolfrog-20"
+              target="_blank"
+              rel="sponsored nofollow noopener noreferrer"
+              aria-label="Shop Levi's Denim Trucker Jacket on Amazon"
+            >
+              <div class="product-info">
+                <div class="product-number">Piece 02</div>
+                <div class="product-name">
+                  Levi's Denim Trucker Jacket
+                </div>
               </div>
 
-            </div>
+              <span class="amazon-button">SHOP ♡</span>
+            </a>
 
-            <span class="amazon-button">
-              SHOP ON AMAZON ♡
-            </span>
+            <!-- SNEAKERS -->
 
-          </a>
-
-
-          <!-- DENIM JACKET -->
-
-          <a
-            class="product"
-            href="https://www.amazon.com/dp/B0G2T5G9YZ?tag=verysmolfrog-20"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            aria-label="Shop Levi's Denim Trucker Jacket on Amazon"
-          >
-
-            <div class="product-info">
-
-              <div class="product-number">
-                Piece 02
+            <a
+              class="product"
+              href="https://www.amazon.com/dp/B0F2F9LQLZ?tag=verysmolfrog-20"
+              target="_blank"
+              rel="sponsored nofollow noopener noreferrer"
+              aria-label="Shop Burgundy adidas Sneakers on Amazon"
+            >
+              <div class="product-info">
+                <div class="product-number">Piece 03</div>
+                <div class="product-name">
+                  Burgundy adidas Sneakers
+                </div>
               </div>
 
-              <div class="product-name">
-                Levi's Denim Trucker Jacket
-              </div>
+              <span class="amazon-button">SHOP ♡</span>
+            </a>
 
-            </div>
-
-            <span class="amazon-button">
-              SHOP ON AMAZON ♡
-            </span>
-
-          </a>
-
-
-          <!-- SNEAKERS -->
-
-          <a
-            class="product"
-            href="https://www.amazon.com/dp/B0F2F9LQLZ?tag=verysmolfrog-20"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            aria-label="Shop Burgundy adidas Sneakers on Amazon"
-          >
-
-            <div class="product-info">
-
-              <div class="product-number">
-                Piece 03
-              </div>
-
-              <div class="product-name">
-                Burgundy adidas Sneakers
-              </div>
-
-            </div>
-
-            <span class="amazon-button">
-              SHOP ON AMAZON ♡
-            </span>
-
-          </a>
-
-
+          </div>
         </div>
 
       </section>
 
-
     </div>
-
 
     <!-- AFFILIATE DISCLOSURE -->
 
     <div class="disclosure">
-
-      <strong>
-        Affiliate Disclosure ♡
-      </strong>
-
+      <strong>Affiliate Disclosure ♡</strong>
       <br><br>
-
       As an Amazon Associate I earn from qualifying purchases.
-
       <br>
-
       This page contains affiliate links. If you make a
       purchase through one of these links, I may earn a
       commission at no additional cost to you.
-
     </div>
 
-
   </main>
-
 
   <!-- FOOTER -->
 
@@ -744,7 +548,5 @@
     ♡ VerySmolFrog Outfits ♡
   </footer>
 
-
 </body>
-
 </html>
