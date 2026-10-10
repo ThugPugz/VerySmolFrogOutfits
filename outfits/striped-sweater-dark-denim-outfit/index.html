@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,15 +10,22 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>Striped Sweater & Dark Denim Outfit | VerySmolFrog</title>
+  <title>Striped Sweater & Dark Denim Outfit ♡ | VerySmolFrog</title>
 
   <meta
     name="description"
-    content="Shop this cute casual Amazon outfit featuring a striped knit sweater, dark wash wide-leg jeans, white casual sneakers and a brown shoulder bag."
+    content="Shop this cute casual Amazon outfit featuring a striped knit sweater, dark-wash wide-leg jeans, white casual sneakers, and a brown shoulder bag."
+  >
+
+  <meta name="theme-color" content="#fffafa">
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://thugpugz.github.io/VerySmolFrogOutfits/outfits/striped-sweater-dark-denim/"
   >
 
   <style>
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -53,6 +61,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 16px;
     }
 
     .logo {
@@ -87,14 +96,31 @@
     .page {
       max-width: 1280px;
       margin: auto;
-      padding: 38px 28px 75px;
+      padding: 30px 28px 75px;
+    }
+
+    .breadcrumb {
+      max-width: 1180px;
+      margin: 0 auto 25px;
+      color: #a09296;
+      font-size: 11px;
+    }
+
+    .breadcrumb a {
+      color: #a09296;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .breadcrumb a:hover {
+      color: #c77f92;
     }
 
     /* INTRO */
 
     .intro {
       text-align: center;
-      margin-bottom: 34px;
+      margin-bottom: 36px;
     }
 
     .eyebrow {
@@ -110,7 +136,7 @@
       font-weight: normal;
       font-size: clamp(36px, 5vw, 52px);
       line-height: 1.15;
-      margin-bottom: 11px;
+      margin-bottom: 13px;
     }
 
     .intro p {
@@ -118,21 +144,37 @@
       max-width: 620px;
       margin: auto;
       font-size: 13px;
-      line-height: 1.75;
+      line-height: 1.8;
+    }
+
+    /* STYLE TAGS */
+
+    .tags {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 12px;
+      background: #f9edf0;
+      color: #98717b;
+      border-radius: 30px;
+      font-size: 10px;
+      letter-spacing: 0.2px;
     }
 
     /* MAIN SHOP LAYOUT */
 
     .shop-layout {
       display: grid;
-
-      grid-template-columns:
-        minmax(390px, 500px)
-        minmax(500px, 1fr);
-
-      gap: 54px;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: 52px;
       align-items: start;
-
       max-width: 1180px;
       margin: auto;
     }
@@ -149,10 +191,7 @@
       padding: 10px;
       border-radius: 22px;
       border: 1px solid #f0e5e7;
-
-      box-shadow:
-        0 16px 42px
-        rgba(80, 55, 60, 0.065);
+      box-shadow: 0 16px 42px rgba(80, 55, 60, 0.065);
     }
 
     .outfit-image {
@@ -173,14 +212,14 @@
 
     .shop-section {
       min-width: 0;
-      padding-top: 9px;
+      padding-top: 8px;
     }
 
     .shop-heading {
       margin-bottom: 23px;
     }
 
-    .shop-heading span {
+    .shop-heading > span {
       display: block;
       color: #b9798a;
       text-transform: uppercase;
@@ -224,16 +263,13 @@
       border: 1px solid #f0e5e7;
       border-radius: 15px;
       padding: 17px 18px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 20px;
-
       color: #30292b;
       text-decoration: none;
       cursor: pointer;
-
       transition:
         transform 0.2s ease,
         box-shadow 0.2s ease,
@@ -245,10 +281,7 @@
       transform: translateY(-2px);
       border-color: #e4c5cd;
       background: #fffdfd;
-
-      box-shadow:
-        0 9px 27px
-        rgba(85, 55, 65, 0.075);
+      box-shadow: 0 9px 27px rgba(85, 55, 65, 0.075);
     }
 
     .product:focus-visible {
@@ -272,30 +305,25 @@
     .product-name {
       font-family: Georgia, "Times New Roman", serif;
       font-size: 17px;
-      line-height: 1.35;
+      line-height: 1.4;
     }
 
-    /* AMAZON CTA */
+    /* AMAZON BUTTON */
 
     .amazon-button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-
-      min-width: 148px;
-
+      min-width: 145px;
       text-align: center;
       background: #e7bcc8;
       color: #332b2d;
-
       border-radius: 10px;
       padding: 12px 14px;
-
       font-size: 9px;
       font-weight: bold;
       letter-spacing: 0.6px;
       white-space: nowrap;
-
       transition:
         background 0.2s ease,
         transform 0.2s ease,
@@ -305,28 +333,22 @@
     .product:hover .amazon-button {
       background: #dba9b7;
       transform: translateY(-1px);
-
-      box-shadow:
-        0 5px 14px
-        rgba(110, 70, 80, 0.12);
+      box-shadow: 0 5px 14px rgba(110, 70, 80, 0.12);
     }
 
-    /* DISCLOSURE */
+    /* AFFILIATE DISCLOSURE */
 
     .disclosure {
       max-width: 800px;
       margin: 58px auto 0;
       padding: 21px 26px;
-
       background: #fff2f5;
       border: 1px solid #f4e0e5;
       border-radius: 14px;
-
       text-align: center;
       color: #817276;
-
       font-size: 10px;
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
     .disclosure strong {
@@ -349,13 +371,9 @@
     /* TABLET */
 
     @media (max-width: 1050px) {
-
       .shop-layout {
-        grid-template-columns:
-          minmax(310px, 400px)
-          minmax(400px, 1fr);
-
-        gap: 34px;
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+        gap: 32px;
       }
 
       .shop-heading h2 {
@@ -364,6 +382,7 @@
 
       .product {
         padding: 15px;
+        gap: 12px;
       }
 
       .product-name {
@@ -371,16 +390,14 @@
       }
 
       .amazon-button {
-        min-width: 132px;
-        padding: 11px 12px;
+        min-width: 125px;
+        padding: 11px 10px;
       }
-
     }
 
     /* MOBILE */
 
     @media (max-width: 760px) {
-
       .nav {
         padding: 14px 16px;
       }
@@ -394,11 +411,15 @@
       }
 
       .page {
-        padding: 32px 15px 55px;
+        padding: 24px 15px 55px;
+      }
+
+      .breadcrumb {
+        margin-bottom: 22px;
       }
 
       .intro {
-        margin-bottom: 27px;
+        margin-bottom: 28px;
       }
 
       h1 {
@@ -412,20 +433,20 @@
       .shop-layout {
         display: flex;
         flex-direction: column;
-        gap: 36px;
-      }
-
-      .shop-section {
-        order: 1;
-        width: 100%;
-        padding-top: 0;
+        gap: 34px;
       }
 
       .outfit-side {
-        order: 2;
+        order: 1;
         width: 100%;
         max-width: 480px;
         margin: auto;
+      }
+
+      .shop-section {
+        order: 2;
+        width: 100%;
+        padding-top: 0;
       }
 
       .shop-heading {
@@ -441,10 +462,6 @@
         margin: auto;
       }
 
-      .exact-pieces {
-        margin-top: 9px;
-      }
-
       .product {
         padding: 15px;
       }
@@ -454,8 +471,8 @@
       }
 
       .amazon-button {
-        min-width: 130px;
-        padding: 11px 10px;
+        min-width: 125px;
+        padding: 11px 9px;
         font-size: 8px;
       }
 
@@ -466,14 +483,13 @@
 
       .disclosure {
         margin-top: 42px;
+        padding: 19px;
       }
-
     }
 
     /* SMALL PHONES */
 
     @media (max-width: 460px) {
-
       h1 {
         font-size: 31px;
       }
@@ -493,121 +509,130 @@
         min-width: 0;
         padding: 12px;
       }
-
     }
 
+    /* REDUCED MOTION */
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
   </style>
 </head>
-
 
 <body>
 
   <!-- HEADER -->
 
   <header>
-
     <div class="nav">
-
       <a
         class="logo"
         href="/VerySmolFrogOutfits/"
+        aria-label="VerySmolFrog Outfits homepage"
       >
-        VerySmolFrog
-        <span class="heart">♡</span>
+        VerySmolFrog <span class="heart">♡</span>
       </a>
 
       <a
         class="back-link"
-        href="/VerySmolFrogOutfits/"
+        href="/VerySmolFrogOutfits/#outfits"
       >
         ← All Outfits
       </a>
-
     </div>
-
   </header>
-
 
   <!-- PAGE -->
 
   <main class="page">
 
+    <!-- BREADCRUMB -->
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/VerySmolFrogOutfits/">Home</a>
+      <span aria-hidden="true"> / </span>
+      <span aria-current="page">Striped Sweater & Dark Denim</span>
+    </nav>
 
     <!-- INTRO -->
 
     <section class="intro">
-
-      <div class="eyebrow">
-        amazon fashion
-      </div>
+      <div class="eyebrow">The Outfit Edit</div>
 
       <h1>
-        Striped Sweater & Dark Denim Outfit
+        Striped Sweater & Dark Denim
         <span class="heart">♡</span>
       </h1>
 
       <p>
         A cozy casual look with a striped knit sweater,
-        dark wash wide-leg denim, neutral sneakers and
-        a rich brown shoulder bag.
+        dark-wash wide-leg denim, white sneakers, and a
+        rich brown shoulder bag. An easy everyday outfit
+        with a timeless, relaxed feel.
       </p>
 
+      <div class="tags" aria-label="Outfit styles">
+        <span class="tag">Casual</span>
+        <span class="tag">Striped Knitwear</span>
+        <span class="tag">Dark Denim</span>
+        <span class="tag">Everyday Style</span>
+        <span class="tag">Amazon Finds</span>
+      </div>
     </section>
-
 
     <!-- IMAGE + SHOP LINKS -->
 
     <div class="shop-layout">
 
-
       <!-- OUTFIT IMAGE -->
 
       <div class="outfit-side">
-
         <div class="outfit-image-container">
-
           <img
             class="outfit-image"
-            src="/VerySmolFrogOutfits/striped-sweater-dark-denim-outfit.png"
-            alt="Cute casual outfit with striped knit sweater, dark wash wide leg jeans, white sneakers and brown shoulder bag"
+            src="../../striped-sweater-dark-denim-outfit.png"
+            alt="Casual outfit featuring a striped knit sweater, dark-wash wide-leg jeans, white and gum sneakers, and a brown shoulder bag"
+            fetchpriority="high"
           >
-
         </div>
 
         <div class="image-note">
           ♡ Striped sweater & dark denim outfit inspiration
         </div>
-
       </div>
-
 
       <!-- SHOP -->
 
-      <section class="shop-section">
+      <section class="shop-section" aria-labelledby="shop-heading">
 
         <div class="shop-heading">
+          <span>Amazon Finds</span>
 
-          <span>
-            amazon finds
-          </span>
-
-          <h2>
-            Shop the Look
+          <h2 id="shop-heading">
+            Shop the Look <span class="heart">♡</span>
           </h2>
 
           <p>
-            Tap any piece below to shop the item on Amazon.
+            Find each piece from this relaxed, casual outfit.
+            Tap any product card to shop it on Amazon.
           </p>
 
           <div class="exact-pieces">
-            The exact pieces from this outfit ♡
+            The pieces from this outfit ♡
           </div>
-
         </div>
 
-
         <div class="products">
-
 
           <!-- SWEATER -->
 
@@ -615,28 +640,16 @@
             class="product"
             href="https://www.amazon.com/dp/B0H7J2KV5S?tag=verysmolfrog-20"
             target="_blank"
-            rel="nofollow sponsored noopener"
+            rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop Striped Knit Sweater on Amazon"
           >
-
             <div class="product-info">
-
-              <div class="product-number">
-                Piece 01
-              </div>
-
-              <div class="product-name">
-                Striped Knit Sweater
-              </div>
-
+              <div class="product-number">Piece 01</div>
+              <div class="product-name">Striped Knit Sweater</div>
             </div>
 
-            <span class="amazon-button">
-              SHOP ON AMAZON ♡
-            </span>
-
+            <span class="amazon-button">SHOP ON AMAZON ♡</span>
           </a>
-
 
           <!-- JEANS -->
 
@@ -644,28 +657,16 @@
             class="product"
             href="https://www.amazon.com/dp/B0H3JRZM98?tag=verysmolfrog-20"
             target="_blank"
-            rel="nofollow sponsored noopener"
+            rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop Dark Wash Wide-Leg Jeans on Amazon"
           >
-
             <div class="product-info">
-
-              <div class="product-number">
-                Piece 02
-              </div>
-
-              <div class="product-name">
-                Dark Wash Wide-Leg Jeans
-              </div>
-
+              <div class="product-number">Piece 02</div>
+              <div class="product-name">Dark Wash Wide-Leg Jeans</div>
             </div>
 
-            <span class="amazon-button">
-              SHOP ON AMAZON ♡
-            </span>
-
+            <span class="amazon-button">SHOP ON AMAZON ♡</span>
           </a>
-
 
           <!-- SNEAKERS -->
 
@@ -673,28 +674,16 @@
             class="product"
             href="https://www.amazon.com/dp/B0DJ2HMQZN?tag=verysmolfrog-20"
             target="_blank"
-            rel="nofollow sponsored noopener"
+            rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop White and Gum Casual Sneakers on Amazon"
           >
-
             <div class="product-info">
-
-              <div class="product-number">
-                Piece 03
-              </div>
-
-              <div class="product-name">
-                White & Gum Casual Sneakers
-              </div>
-
+              <div class="product-number">Piece 03</div>
+              <div class="product-name">White & Gum Casual Sneakers</div>
             </div>
 
-            <span class="amazon-button">
-              SHOP ON AMAZON ♡
-            </span>
-
+            <span class="amazon-button">SHOP ON AMAZON ♡</span>
           </a>
-
 
           <!-- BAG -->
 
@@ -702,60 +691,35 @@
             class="product"
             href="https://www.amazon.com/dp/B0F9L1HVNG?tag=verysmolfrog-20"
             target="_blank"
-            rel="nofollow sponsored noopener"
+            rel="nofollow sponsored noopener noreferrer"
             aria-label="Shop Brown Shoulder Bag on Amazon"
           >
-
             <div class="product-info">
-
-              <div class="product-number">
-                Piece 04
-              </div>
-
-              <div class="product-name">
-                Brown Shoulder Bag
-              </div>
-
+              <div class="product-number">Piece 04</div>
+              <div class="product-name">Brown Shoulder Bag</div>
             </div>
 
-            <span class="amazon-button">
-              SHOP ON AMAZON ♡
-            </span>
-
+            <span class="amazon-button">SHOP ON AMAZON ♡</span>
           </a>
 
-
         </div>
-
       </section>
-
-
     </div>
-
 
     <!-- AFFILIATE DISCLOSURE -->
 
-    <div class="disclosure">
+    <aside class="disclosure">
+      <strong>Affiliate Disclosure ♡</strong>
 
-      <strong>
-        Affiliate Disclosure ♡
-      </strong>
-
-      <br><br>
-
-      As an Amazon Associate I earn from qualifying purchases.
-
-      <br>
-
-      This page contains affiliate links. If you make a
-      purchase through one of these links, I may earn a
-      commission at no additional cost to you.
-
-    </div>
-
+      <p>
+        As an Amazon Associate I earn from qualifying purchases.
+        This page contains affiliate links, which means I may earn
+        a commission if you purchase through these links, at no
+        additional cost to you.
+      </p>
+    </aside>
 
   </main>
-
 
   <!-- FOOTER -->
 
@@ -763,7 +727,5 @@
     ♡ VerySmolFrog Outfits ♡
   </footer>
 
-
 </body>
-
 </html>
